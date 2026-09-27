@@ -1,0 +1,46 @@
+{
+  "name": "http-from-scratch",
+  "version": "1.0.0",
+  "description": "Production-quality HTTP/1.1 server built from scratch on raw TCP sockets",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./testing": {
+      "types": "./dist/testing.d.ts",
+      "import": "./dist/testing.js"
+    }
+  },
+  "bin": {
+    "http-from-scratch": "./dist/examples/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "tsx examples/cli.ts",
+    "verify:live": "tsx scripts/verify-live.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "http",
+    "tcp",
+    "from-scratch",
+    "http1.1",
+    "server"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

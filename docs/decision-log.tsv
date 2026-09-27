@@ -1,0 +1,9 @@
+ts	phase	decision	why	evidence	result
+2026-09-27T15:16:34Z	start	begin http-from-scratch build run	figure-it-out playbook for greenfield HTTP/1.1 server	workspace /home/nyx/http-from-scratch	open
+2026-09-27T15:16:34Z	frame	done predicate fixed TypeScript Node raw TCP server	falsifiable gate before long run	predicate: npm test green + live curl methods/static/keepalive + no node:http in server	open
+2026-09-27T15:16:53Z	frame	chose TypeScript on Node net for the server	typed domain model and portfolio clarity; python reverses	Phase A framing in chat	open
+2026-09-27T15:17:30Z	architect	spawned 3 arena design candidates	exhaust design space before locking module shape	agents a6548848 0758497a 699263b7 paths /tmp/arena-http-server/candidate-{1,2,3}	waiting
+2026-09-27T15:18:04Z	architect	named models rejected; retry arena on inherit/Auto	free plan only allows Auto; arena seats still fan out for structural diversity via prompts	failed agents a6548848 0758497a 699263b7	retrying
+2026-09-27T15:20:17Z	architect	all three arena design candidates completed	fan-out seats finished on inherit	candidate-1 179bee30 candidate-2 3aa78630 candidate-3 11749ab5	waiting on cross-judge
+2026-09-27T15:21:29Z	architect	pick candidate-2 as base; graft C1 createServer DX and C3 Body/MatchResult/Limits/registry	cross-judge 12/12 on C2; parent agrees on FSM + limits; grafts fix DX and typing	/tmp/arena-http-server/cross-judge.md	picked
+2026-09-27T15:28:13Z	verify	npm test 29/29, typecheck clean, verify:live PASS	prove it works against real TCP and unit suite	npm test; npm run typecheck; npm run verify:live	tests green
