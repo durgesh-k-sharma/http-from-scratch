@@ -1,6 +1,6 @@
 # HTTP from scratch
 
-A production-minded **HTTP/1.1 server** implemented on raw TCP (`node:net`) in TypeScript. It does **not** use Node's `http` module for serving. The goal is a clear, testable model of how HTTP actually works on the wire.
+A focused **HTTP/1.1 server** implemented on raw TCP (`node:net`) in TypeScript. It does **not** use Node's `http` module for serving. The goal is a clear, testable model of how HTTP actually works on the wire.
 
 ## Features
 
@@ -166,7 +166,7 @@ npm run verify:live
 
 ## Design notes
 
-Architecture came from a three-way design arena. The base is a **connection-actor** with an explicit phase model and limits at the byte boundary. Grafted on top: a familiar `createServer` + verb API, discriminant `Body` / `MatchResult` types, and a frozen route registry with static fallback. Decision trail (local): `.audit/http-server.tsv`.
+Architecture came from a three-candidate design arena (structural variants on Auto after named models were unavailable). The base is a **connection-actor** with an explicit phase model and limits at the byte boundary. Grafted on top: a familiar `createServer` + verb API, discriminant `Body` / `MatchResult` types, and a frozen route registry with static fallback. See `docs/SYNTHESIS.md`, `docs/arena-cross-judge.md`, and `docs/decision-log.tsv`.
 
 ## License
 
