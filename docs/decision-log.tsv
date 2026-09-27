@@ -7,3 +7,4 @@ ts	phase	decision	why	evidence	result
 2026-09-27T15:20:17Z	architect	all three arena design candidates completed	fan-out seats finished on inherit	candidate-1 179bee30 candidate-2 3aa78630 candidate-3 11749ab5	waiting on cross-judge
 2026-09-27T15:21:29Z	architect	pick candidate-2 as base; graft C1 createServer DX and C3 Body/MatchResult/Limits/registry	cross-judge 12/12 on C2; parent agrees on FSM + limits; grafts fix DX and typing	/tmp/arena-http-server/cross-judge.md	picked
 2026-09-27T15:28:13Z	verify	npm test 29/29, typecheck clean, verify:live PASS	prove it works against real TCP and unit suite	npm test; npm run typecheck; npm run verify:live	tests green
+2026-09-27T15:30:37Z	ship	pushed public GitHub repo on main	GitHub-ready deliverable for greenfield; no PR stack needed for root commit	https://github.com/durgesh-k-sharma/http-from-scratch	shipped
